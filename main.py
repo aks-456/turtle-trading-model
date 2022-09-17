@@ -8,7 +8,7 @@ import xlsxwriter
 
 
 
-cred = credentials.Certificate("turtle-trading-model-firebase-adminsdk-4rv25-ce9ed9fa72.json")
+cred = credentials.Certificate("insert_credentials_certificate_file_path_here")
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
