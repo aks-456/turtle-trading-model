@@ -46,19 +46,18 @@ for doc in docs:
     if(data_20['High'].max() == td_high_20):
         worksheet.write('A' + str(i), str(ticker))
         worksheet.write('B' + str(i), '20-day-high', cell_format_green)
+        i += 1
     if(data_20['High'].min() == td_high_20):
         worksheet.write('A' + str(i), str(ticker))
         worksheet.write('C' + str(i), '20-day-low', cell_format_red)
-
+        i += 1
     if(data_55['High'].max() == td_high_55):
         worksheet.write('A' + str(i), str(ticker))
         worksheet.write('D' + str(i), '55-day-high', cell_format_green)
-
+        i += 1
     if(data_55['High'].min() == td_high_55):
         worksheet.write('A' + str(i), str(ticker))
         worksheet.write('E' + str(i), '55-day-low', cell_format_red)
-        
-
-    i += 1
+        i += 1
 
 workbook.close()
